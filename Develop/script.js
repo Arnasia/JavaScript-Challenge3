@@ -12,11 +12,10 @@ let upperCaseBoolean = confirm ("Should password consist of uppercase characters
 let lowerCaseBoolean = confirm ("Should password consist of lowercase characters?")
 let specialCharsBoolean = confirm ("Should password consist of special characters?")
 console.log(numberBoolean)
+
 if (numberBoolean) {
 userChoice = userChoice.concat(numbers)
 }
-
-
 if (upperCaseBoolean) {
   userChoice = userChoice.concat(upperCase)
 }
@@ -27,7 +26,18 @@ if (specialCharsBoolean) {
   userChoice = userChoice.concat(specialChars)
 }
 console.log(userChoice)
+
+let passwordString=""
+for (i=0;i < passwordLength; i++) {
+  let index=Math.floor(Math.random()*userChoice.length)
+  let randomChars=userChoice[index]
+  passwordString=passwordString+randomChars
 }
+return passwordString
+}
+
+
+
 //make password appear in display box
 // document.getElementById("display").value = password;
 
