@@ -1,5 +1,4 @@
-# Password Generator Starter Code
-#Arnasia Porfolio Website
+# Password Generator
 
 ##Description of Project
 In this project we was challenged to utilize JavaScript to create a password generator. The project prompts the user with numerous of preference questions that will show as pop-ups before the password is generated into the box. The user have the option to choose between how many characters they want their password to be as well as what they would like their password to contain.
